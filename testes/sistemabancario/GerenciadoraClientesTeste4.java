@@ -1,5 +1,9 @@
 package sistemabancario;
 
+//Cobertura de teste
+//Sem repetição de código (metodos, before, after etc)
+//Comentarios no padrao Javadoc
+
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 
@@ -41,7 +45,7 @@ public class GerenciadoraClientesTeste4 { //testando os metodos testPesquisaClie
 	}	
 		
 	//Metodo de testes
-	@After	//limpa o cenario
+	@After	//limpa o cenario - para garantir independencia dos testes (nao se influenciam)
 	public void tearDown() {	//esvazia a lista a cada teste
 		//desmontagem/limpeza do cenario global
 		gerClientes.limpa();
